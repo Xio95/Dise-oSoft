@@ -11,6 +11,7 @@ namespace Semana2
         static void Main(string[] args)
         {
             Console.WriteLine("\nHola Mundo! :)");
+            Console.WriteLine("Nice to meet you");
             Console.ReadKey();
         }
     }
