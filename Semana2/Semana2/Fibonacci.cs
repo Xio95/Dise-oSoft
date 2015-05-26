@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,8 +9,24 @@ namespace Semana2
 {
     class Fibonacci
     {
+       ArrayList x = new ArrayList();
+
+       public ArrayList recibe(IEnumerable Fibona02)
+       {
+           ArrayList f = new ArrayList();
+           foreach (int obj in Fibona02)
+           {
+               f.Add(Calcular(obj));
+
+
+
+           } return f;
+           
+       }
+
         public int Calcular(int n)
         {
+           
             if (n == 1)
             {
                 return 1;
@@ -21,6 +38,10 @@ namespace Semana2
                 return Calcular(n-1)+ Calcular(n-2);
             } 
         }
+
+    public void PnewArray (){
+
+}
     }
 
 
