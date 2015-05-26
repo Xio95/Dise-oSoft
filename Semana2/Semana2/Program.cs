@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -15,7 +16,16 @@ namespace Semana2
             //Console.ReadKey();
 
             Fibonacci prueba1 = new Fibonacci();
-            Console.WriteLine(prueba1.Calcular(5));
+            //Console.WriteLine(prueba1.Calcular(5));
+
+            ArrayList Fibona02 = new ArrayList();
+            Fibona02.Add(4);
+            Fibona02.Add(6);
+            Fibona02.Add(20);
+            Fibona02.Add(1);
+            Fibona02.Add(11);
+            Fibona02.Add(25);
+            Console.WriteLine(prueba1.recibe(Fibona02));
             Console.ReadKey();
         }
     }
