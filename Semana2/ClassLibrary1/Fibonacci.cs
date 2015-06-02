@@ -5,9 +5,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Semana2
-{
-    class Fibonacci
+//namespace Semana2
+//{
+    public class Fibonacci
     {
        ArrayList x = new ArrayList();
 
@@ -39,10 +39,8 @@ namespace Semana2
             } 
         }
 
-    public void PnewArray (){
-
-}
-    }
+  //}
+    
 
 
             
