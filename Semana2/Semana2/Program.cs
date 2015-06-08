@@ -11,17 +11,36 @@ namespace Semana2
     {
         static void Main(string[] args)
         {
-            BaseDeDatos.Class1 db = new BaseDeDatos.Class1();
+            MaximoFibonacci();
+        }
+            //hago referencia con respeto al projecto BaseDeDatosCorrect    
+         
+        private static void MaximoFibonacci(){
+            Fibonacci c= new Fibonacci();
+            Calculos.RespuestaDeMaximoFibonacci respuesta= c.ObtengaElMaxFibonacci();
+
+            Impresora LaImpresora = new Impresora();
+            LaImpresora.Imprima (respuesta);
+        }
+        
+        private static void BaseDeDatosSimulacion(){
+            
+            BaseDeDatosCorrect.Numeros db = new BaseDeDatosCorrect.Numeros();
             db.Agregar(1);
             db.Agregar(211);
             db.Agregar(45);
             db.Agregar(458);
             db.Agregar(11);
 
+            int cantidad = db.ObtenerCantidadC();
 
-
-            int cantidad = db.ObtenerCantidad();
+            //imprime cantidad de valores de la Base
             Console.WriteLine("La cantidad de numeros es: " + cantidad);
+            Console.ReadLine();
+
+
+            //int cantidad = db.ObtenerCantidadC();
+            //Console.WriteLine("La cantidad de numeros es: " + cantidad);
 
 
 
