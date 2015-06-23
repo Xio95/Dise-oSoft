@@ -15,8 +15,16 @@ namespace Division
             string resultadoString;
             try
             {
-                double dividendo = elLimite.ObtenerDividendo();
-                double divisor = elLimite.ObtenerDivisor();
+                string dividendo = elLimite.ObtenerDividendo();
+                if (dividendo.Contains("."))
+                {
+
+                }
+                else
+                {
+                    
+                }
+                string divisor = elLimite.ObtenerDivisor();
 
                 CalculadoraEntity laCalculadora = new CalculadoraEntity();
                 double resultado = laCalculadora.Dividir(dividendo, divisor);
