@@ -10,6 +10,8 @@ namespace Division
     {
         public double ObtenerDivisor()
         {
+            Console.WriteLine("Deme el divisor");
+
             string divisor = Console.ReadLine();
             double respuesta = double.Parse(divisor);
             return respuesta;
@@ -17,9 +19,17 @@ namespace Division
 
        public double ObtenerDividendo()
         {
+            Console.WriteLine("Deme el dividendo");
+
             string dividendo = Console.ReadLine();
             double respuesta = double.Parse(dividendo);
             return respuesta;
         }
+        //solo para este componente
+       internal void MostrarResultado(string resultado)
+       {
+          Console.WriteLine(resultado);
+          Console.ReadLine();
+       }
     }
 }
