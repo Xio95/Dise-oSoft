@@ -28,6 +28,7 @@ namespace Division
         //solo para este componente
        internal void MostrarResultado(string resultado)
        {
+           Console.Write("El resultado es: ");
           Console.WriteLine(resultado);
           Console.ReadLine();
        }
